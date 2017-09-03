@@ -8,6 +8,11 @@ public class GooglePage {
         return this;
     }
 
+    public GooglePage close (){
+        Selenide.close();
+        return this;
+    }
+
     public void inputSymbols(String symbols){
         $("#lst-ib").val(symbols).pressEnter().click();
     }
