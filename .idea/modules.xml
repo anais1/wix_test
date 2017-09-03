@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix.iml" filepath="$PROJECT_DIR$/.idea/modules/wix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wix_main.iml" group="wix" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wix_test.iml" group="wix" />
+    </modules>
+  </component>
+</project>

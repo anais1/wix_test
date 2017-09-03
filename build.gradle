@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.3"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'io.qameta.allure'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.0-BETA16'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'com.codeborne', name: 'selenide', version: '4.5.1'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.testng', name: 'testng', version: '6.11'
+    testCompile 'org.assertj:assertj-core:3.8.0'
+    testCompile 'io.github.bonigarcia:webdrivermanager:1.7.1'
+
+
+}
+
+test {
+    useTestNG()
+    systemProperties System.properties
+
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = 'full'
+    }
+
+    test.outputs.upToDateWhen { false }
+}
+
+task chrome(type: Test) {
+    useTestNG(){
+        listeners << "tests.utils.Screenshotter"
+    }
+    systemProperties['selenide.browser'] = 'chrome'
+    systemProperties['selenide.baseUrl'] = 'https://www.google.com.ua/'
+}
+
+allure {
+    version = '2.2.1'
+    autoconfigure = true
+    aspectjweaver = true
+}
