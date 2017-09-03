@@ -1,13 +1,9 @@
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import utils.Screenshotter;
-
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.WebDriverRunner.url;
-@Listeners({ Screenshotter.class })
+
 public class WixPageTest extends ConfigTest {
 
     GooglePage mainPage = new GooglePage();

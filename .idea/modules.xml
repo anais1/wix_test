@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix.iml" filepath="$PROJECT_DIR$/.idea/modules/wix.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wix_main.iml" group="wix" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wix_test.iml" group="wix" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix.test.iml" filepath="$PROJECT_DIR$/.idea/modules/wix.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix.test_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wix.test_main.iml" group="wix.test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wix.test_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wix.test_test.iml" group="wix.test" />
     </modules>
   </component>
 </project>
